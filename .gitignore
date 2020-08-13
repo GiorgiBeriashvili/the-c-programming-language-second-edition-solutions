@@ -52,4 +52,8 @@ Mkfile.old
 dkms.conf
 
 # Editor related files
+.idea
 .vscode
+
+# Development related files
+main
