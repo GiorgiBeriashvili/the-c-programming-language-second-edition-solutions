@@ -56,4 +56,5 @@ dkms.conf
 .vscode
 
 # Development related files
+.env
 main
