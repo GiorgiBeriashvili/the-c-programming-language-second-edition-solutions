@@ -16,7 +16,7 @@ int main() {
         word_frequencies[index] = 0;
     }
 
-    printf("Input a sentence (Ctrl + D to submit): ");
+    printf("Please enter characters (Ctrl + D to submit): ");
 
     while ((input = getchar()) != EOF) {
         if (input == ' ' || input == '\n' || input == '\b') {
@@ -40,7 +40,7 @@ int main() {
         }
     }
 
-    printf("\n\nHistogram (horizontal orientation):\n\n");
+    printf("\n\nWord length histogram (horizontal orientation):\n\n");
 
     for (int index = 0; index < MAXIMUM_LENGTH; index++) {
         if (index < MAXIMUM_LENGTH - 1) {
@@ -56,7 +56,7 @@ int main() {
         printf("\n");
     }
 
-    printf("\n\nHistogram (vertical orientation):\n\n");
+    printf("\n\nWord length histogram (vertical orientation):\n\n");
 
     for (int index = maximum_frequency; index != 0; index--) {
         printf("%2d |", index);
