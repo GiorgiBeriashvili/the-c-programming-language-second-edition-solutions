@@ -4,16 +4,16 @@
 #include <stdio.h>
 
 #define SIZE 1000    /* maximum input line size */
-#define THRESHOLD 80 /* minimum length threshold */
+#define THRESHOLD 80 /* minimum size threshold */
 
-int get_line(char line[], int maxline);
+int get_line_size(char buffer[], int maxline);
 
 int main() {
-    int length;      /* current line length */
+    int size;        /* current line size */
     char line[SIZE]; /* current input line */
 
-    while ((length = get_line(line, SIZE)) > 0) {
-        if (length > THRESHOLD) {
+    while ((size = get_line_size(line, SIZE)) > 0) {
+        if (size > THRESHOLD) {
             printf("%s", line);
         }
     }
@@ -21,8 +21,8 @@ int main() {
     return 0;
 }
 
-/* get_line: read a line into buffer, return length */
-int get_line(char buffer[], int size) {
+/* get_line_size: read a line into buffer, return size */
+int get_line_size(char buffer[], int size) {
     int input, index;
 
     for (index = 0;
