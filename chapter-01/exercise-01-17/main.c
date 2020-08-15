@@ -6,7 +6,7 @@
 #define SIZE 1000    /* maximum input line size */
 #define THRESHOLD 80 /* minimum size threshold */
 
-int get_line_size(char buffer[], int maxline);
+int get_line_size(char buffer[], int size);
 
 int main() {
     int size;        /* current line size */
