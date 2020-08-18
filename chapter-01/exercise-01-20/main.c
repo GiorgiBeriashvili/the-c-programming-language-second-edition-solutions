@@ -16,7 +16,7 @@ int main() {
             int remainder = TAB_SIZE - get_remainder(offset, TAB_SIZE);
 
             for (int index = 0; index < remainder; index++) {
-                putchar('#');
+                putchar(' ');
             }
 
             offset = 0;
